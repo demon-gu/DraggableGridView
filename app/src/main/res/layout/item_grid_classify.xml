@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_grid_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/grid_item_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/grid_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/grid_item_state"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textGrayColor"
+                android:gravity="center"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/grid_item_tip"
+            android:textStyle="italic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:paddingTop="2dp"
+            android:textSize="9sp"
+            android:visibility="visible"
+            android:background="@drawable/game_type_bg"/>
+    </RelativeLayout>
+
+</RelativeLayout>
