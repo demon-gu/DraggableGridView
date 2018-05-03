@@ -226,6 +226,7 @@ public class DragGridView extends GridView {
         return isDrag;
     }
 
+    //设置是否可拖拽
     public void setDrag(boolean drag) {
         isDrag = drag;
     }
@@ -234,6 +235,7 @@ public class DragGridView extends GridView {
         return mDragResponseMs;
     }
 
+    //设置长按响应时长
     public void setDragResponseMs(long mDragResponseMs) {
         this.mDragResponseMs = mDragResponseMs;
     }
